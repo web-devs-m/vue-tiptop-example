@@ -448,8 +448,8 @@
         Bullet List
       </button>
     </floating-menu>
+    <editor-content :editor="editor" />
   </div>
-  <editor-content :editor="editor" />
   <div class="character-count" v-if="editor">
     {{ editor.storage.characterCount.characters() }}/{{ limit }} characters
     <br />
